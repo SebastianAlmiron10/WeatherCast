@@ -13,8 +13,8 @@ WeatherCast is a web application designed to provide accurate and up-to-date wea
 ## Technologies Used 💻
 **💻 HTML, CSS, JavaScript:** The application is built using standard web technologies to create an interactive and engaging experience for users.
 
-**🌐 Google Maps and Places API:** These are used for reverse geocoding and city search, allowing users to easily find weather information for any location.
+**🌐 [Google Maps and Places API](https://console.cloud.google.com/):** These are used for reverse geocoding and city search, allowing users to easily find weather information for any location.
 
-**🌞 OpenWeather API:** Provides accurate and up-to-date weather data to power the application's search and display functionalities.
+**🌞 [OpenWeather API](https://openweathermap.org/):** Provides accurate and up-to-date weather data to power the application's search and display functionalities.
 
-**🎨 Tailwind CSS:** Used to style the application and ensure a modern and responsive appearance on all devices.
+**🎨 [Tailwind CSS](https://tailwindcss.com/):** Used to style the application and ensure a modern and responsive appearance on all devices.
