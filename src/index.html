@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anta&family=Nunito:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" href="./sol.png" type="image/png">
+        <title>WeatherCast</title>
+    </head>
+<body class="font-anta bg-gray-100 md:py-8 grid content-center">
+    <section class="w-[100%] max-w-md mx-auto bg-white shadow-2xl md:flex md:rounded-2xl md:max-w-4xl">
+        <article
+        id="bg-gif"
+        class="
+        bg-gradient-to-b
+        from-light-slate-blue
+        to-light-royal-blue
+        md:rounded-2xl 
+        p-10
+        text-white
+        text-center
+        md:w-1/2
+        md:grid
+        md:content-center
+        ">
+        <p id="city" class="font-bold text-2xl"></p>
+        <div class="w-40 aspect-square bg-gradient-to-b from-violet-blue to-persian-blue rounded-full mx-auto my-8 grid content-center md:w-56">
+            <p id="description"></p>
+            <p  class=" text-5xl font-bold md-2 md:text-7xl"><span id="temp">-</span>°C</p>
+            <p><span id="temp-max">-</span>°  / <span id="temp-min">-</span>°</p>
+        </div>
+        <p>RealFeel: <span id="feels-like">-</span>°C</p>
+        <div class="grid grid-cols-2 justify-between p-2">
+            <div>
+                <p>Humedad: <span id="humidity">-</span>  %</p>
+                <p>Nubosidad: <span id="clouds-all">-</span> %</p>
+            </div>
+            <div>
+                <p>Viento: <span id="wind-deg">-</span> <span id="wind-speed">-</span> km/h</p>
+                <p>Visibilidad: <span id="visibility">-</span> km</p>
+            </div>
+        </div>
+        <div class="max-w-md w-md flex scroll-auto max-h-[300px] overflow-y-auto" id="forecast-hours">
+        </div>
+        </article>
+        <article class="p-10 grid gap-6 md:w-1/2">
+            <input type="text" id="place-input" placeholder="Buscar ciudad..." class="input pl-1 max-h-6">
+            <div id="forecast-daily" class=" grid gap-6">
+                <div class="bg-dark-gray-blue/10 rounded-xl flex py-5 px-6 items-center">
+                    <p class="mr-3 text-lg font-bold">DOM</p>
+                    <img src="/sol.png" alt="" width="20" >
+                    <p class="ml-auto text-dark-gray-blue">30°<span class="text-dark-gray-blue/70">18°</span></p>
+                    <p class="ml-auto text-dark-gray-blue/80">Nublado</p>
+                    <p class="ml-auto font-bold">47 %</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <script type="module" src="./index.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbbTKhaC8LtvrBvaMAr_sWkSHD0ZrlG8c&libraries=places"
+        async
+    ></script>
+</body>
+</html>
